@@ -1,0 +1,74 @@
+:root{
+  /*========== Colors ==========*/
+--color-bg: #40f3b7;
+--color2: #333;
+--color3: #fff;
+}
+
+body {
+  background-image: url('../img/fundo.jpg');
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.profile {
+  text-align: center;
+  padding: 20px;
+  color: var(--color2);
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  background-color: var(--color2);
+  opacity: 0.5; /* 0.5 é o valor alpha para 50% de transparência */  
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu a {
+  color: var(--color3);
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.content {
+  color: var(--color2);
+  text-align: center;
+  display: none;
+  padding: 20px;
+}
+
+.content.active {
+  display: block;
+}
+
+.social-icons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.social-icons a {
+  color: var(--color2);
+  text-decoration: none;
+  font-size: 24px;
+  margin-left: 10px;
+}
