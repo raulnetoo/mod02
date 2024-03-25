@@ -72,3 +72,39 @@ body {
   font-size: 24px;
   margin-left: 10px;
 }
+
+
+/* Estilos para dispositivos maiores que 768px */
+@media (min-width: 768px) {
+  .menu {
+    width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Estilos para dispositivos menores que 768px (como smartphones) */
+@media (max-width: 767px) {
+  .menu {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .profile img {
+    width: 100px;
+  }
+
+  .profile h1 {
+    font-size: 1.5rem;
+  }
+
+  .social-icons {
+    text-align: right;
+    padding: 10px;
+  }
+
+  .social-icons a {
+    margin-left: 10px;
+  }
+}
